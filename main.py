@@ -3,13 +3,13 @@ import pandas as p
 
 myscr=t.Screen()
 myscr.title("US STATE GAME")
-img=r"C:\Users\linge\Desktop\python 100 days\projects\pr-25\img\blank_states_img.gif"
+img=r"blank_states_img.gif"
 myscr.setup(width=700,height=700)
 myscr.addshape(img)
 t.shape(img)
 
 # ans_state=myscr.textinput(title='Guess Country',prompt="Whats the another state's Name?").title()
-statedata=p.read_csv(r"C:\Users\linge\Desktop\python 100 days\projects\pr-25\50_states.csv")
+statedata=p.read_csv(r"50_states.csv")
 listofstate=statedata['state'].to_list()
 loop=[]
 
